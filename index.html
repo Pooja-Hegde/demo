@@ -30,6 +30,7 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <script src="js/index.js"></script>
    </head>
    <body>
       <!--header section start -->
@@ -38,11 +39,11 @@
             <nav class="navbar navbar-dark bg-dark">
                <a class="logo" href="index.html"><img src="images/logo.png"></a>
                <div class="search_section">
-                  <ul>
+                  <!-- <ul>
                      <li><a href="#">Log In</a></li>
                      <li><a href="#"><img src="images/shopping-bag.png"></a></li>
                      <li><a href="#"><img src="images/search-icon.png"></a></li>
-                  </ul>
+                  </ul> -->
                </div>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -78,15 +79,15 @@
                            <div class="col-md-6">
                               <div class="taital_main">
                                  <h4 class="banner_taital"><span class="font_size_90">50%</span> Discount Online Shop</h4>
-                                 <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration </p>
-                                 <div class="book_bt"><a href="#">Shop Now</a></div>
+                                 <p class="banner_text">Click on Buy Now to get the source code </p>
+                                 <div class="book_bt"><a href="#">Buy Now</a></div>
                               </div>
                            </div>
                            <div class="col-md-6">
                               <div><img src="images/img-1.png" class="image_1"></div>
                            </div>
                         </div>
-                        <div class="button_main"><button class="all_text">All</button><input type="text" class="Enter_text" placeholder="Enter keywords" name=""><button class="search_text">Search</button></div>
+                        <!-- <div class="button_main"><button class="all_text">All</button><input type="text" class="Enter_text" placeholder="Enter keywords" name=""><button class="search_text">Search</button></div> -->
                      </div>
                   </div>
                   <div class="carousel-item">
@@ -95,231 +96,166 @@
                            <div class="col-md-6">
                               <div class="taital_main">
                                  <h4 class="banner_taital"><span class="font_size_90">50%</span> Discount Online Shop</h4>
-                                 <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration </p>
-                                 <div class="book_bt"><a href="#">Shop Now</a></div>
+                                 <p class="banner_text">Click to Buy  Now to get the source code </p>
+                                 <div class="book_bt"><a href="#">Buy Now</a></div>
                               </div>
                            </div>
                            <div class="col-md-6">
                               <div><img src="images/img-1.png" class="image_1"></div>
                            </div>
                         </div>
-                        <div class="button_main"><button class="all_text">All</button><input type="text" class="Enter_text" placeholder="Enter keywords" name=""><button class="search_text">Search</button></div>
                      </div>
                   </div>
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <div class="taital_main">
-                                 <h4 class="banner_taital"><span class="font_size_90">50%</span> Discount Online Shop</h4>
-                                 <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration </p>
-                                 <div class="book_bt"><a href="#">Shop Now</a></div>
-                              </div>
-                           </div>
-                           <div class="col-md-6">
-                              <div><img src="images/img-1.png" class="image_1"></div>
-                           </div>
-                        </div>
-                        <div class="button_main"><button class="all_text">All</button><input type="text" class="Enter_text" placeholder="Enter keywords" name=""><button class="search_text">Search</button></div>
-                     </div>
-                  </div>
+                
                </div>
-               <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+               <!-- <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
                <i class=""><img src="images/left-icon.png"></i>
                </a>
                <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-               <i class=""><img src="images/right-icon.png"></i>
+               <i class=""><img src="images/right-icon.png"></i> -->
                </a>
             </div>
          </div>
          <!--banner section end -->
       </div>
+      &nbsp; 
       <!--header section end -->
       <!--category section start -->
-      <div class="container">
-         <div class="category_section">
-            <div class="row">
-               <div class="col-lg-2 col-sm-12">
-                  <h1 class="category_text">Category</h1>
-               </div>
-               <div class="col-lg-10 col-sm-12 main">
-                  <div class="col">
-                     <div class="box_main">
-                        <div class="icon_1"></div>
-                        <h4 class="fashion_text active">New Fashion</h4>
+      <nav class="shift">
+         <ul>
+           <li><a href="#First">App Overview</a></li>
+           <li><a href="#Second">Tech Stack</a></li>
+           <li><a href="#Third">Admin Overview</a></li>
+         </ul>
+       </nav>
+       <div class="container mt-5 mb-5 myDiv" style="display:block" id="First" >
+         <div class="row d-flex justify-content-center">
+             <div class="col-md-10">
+                 <div class="card">
+                     <div class="row">
+                         <div class="col-md-6">
+                             <div class="images p-3">
+                                 <div class="text-center p-4"> <img id="main-image" src="images/agtech_main/3 Home.png" width="150" /> </div>
+                                 <div class="thumbnail text-center"> 
+                                    <img   onclick="change_image(this)" src="images/agtech_main/2 SignIn.png" width="70"> 
+                                    <img  onclick="change_image(this)" src="images/agtech_main/4 Single Item Screen.png" width="70"> 
+                                    <img  onclick="change_image(this)" src="images/agtech_main/8 Cart.png" width="70"> 
+                                    <img  onclick="change_image(this)" src="images/agtech_main/11 Account.png" width="70">
+                                    <img  onclick="change_image(this)" src="images/agtech_main/10 Fav.png" width="70">
+                                    </div>
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="product p-4">
+                                 <div class="d-flex justify-content-between align-items-center">
+                                   
+                                 </div>
+                                 <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand"></span>
+                                    <!-- <h1 class="">App Overview</h1> -->
+                                     <!-- <h3 class="">Description</h3> -->
+                                     <!-- <div class="price d-flex flex-row align-items-center"> <span class="act-price"></span> -->
+                                         <div class="ml-2"> <small class="dis-price"></small> <span></span> </div>
+                                     <!-- </div> -->
+                                 </div>
+                                 <!-- <p style="font-size: 16px;" class="about">Shop from a wide range of t-shirt from orianz. Pefect for your everyday use, you could pair it with a stylish pair of jeans or trousers complete the look.</p> -->
+                                 <!-- <h3 class="">App Highlights</h3><br> -->
+                                 <h4 class="">Home Screen</h4>
+                                 <p style="font-size: 14px;" class="about">Landing screen of the application, where items and categories are displayed with ad banners.</p>
+
+                                 <h4 class="">Login Screen</h4>
+                                 <p style="font-size: 14px;" class="about">Login Screen of the application. It allows user to login using Google Sign In.</p>
+
+                                 <h4 class="">Single Item Detail Screen</h4>
+                                 <p style="font-size: 14px;" class="about">Single Item Detail Screen where details about the item is displayed with different types of item versions(Spinach is the item, we can also have 1 piece or 2 pieces)</p>
+                                 
+                                 <h4 class="">Cart Screen</h4>
+                                 <p style="font-size: 14px;" class="about">Cart Screen which displays all the items added to the cart.</p>
+
+                                 <h4 class="">Account Screen</h4>
+                                 <p style="font-size: 14px;" class="about">Account Screen where personal details, shipping address and orders list is displayed.</p>
+
+                                 <h4 class="">My Favorite Screen</h4>
+                                 <p style="font-size: 14px;" class="about">All the items which has been added as Favorites will be displayed in My Favorite Screen</p>
+
+                                 <!-- <div class="sizes mt-5">
+                                     <h6 class="text-uppercase">Size</h6> <label class="radio"> <input type="radio" name="size" value="S" checked> <span>S</span> </label> <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label> <label class="radio"> <input type="radio" name="size" value="L"> <span>L</span> </label> <label class="radio"> <input type="radio" name="size" value="XL"> <span>XL</span> </label> <label class="radio"> <input type="radio" name="size" value="XXL"> <span>XXL</span> </label>
+                                 </div> -->
+                                 <!-- <div class="cart mt-4 align-items-center"> <button class="btn btn-danger text-uppercase mr-2 px-4">Add to cart</button> <i class="fa fa-heart text-muted"></i> <i class="fa fa-share-alt text-muted"></i> </div> -->
+                             </div>
+                         </div>
                      </div>
-                  </div>
-                  <div class="col">
-                     <div class="box_main">
-                        <div class="icon_2"></div>
-                        <h4 class="fashion_text">Clothing</h4>
-                     </div>
-                  </div>
-                  <div class="col">
-                     <div class="box_main">
-                        <div class="icon_3"></div>
-                        <h4 class="fashion_text">Watches</h4>
-                     </div>
-                  </div>
-                  <div class="col">
-                     <div class="box_main">
-                        <div class="icon_4"></div>
-                        <h4 class="fashion_text">Accessories</h4>
-                     </div>
-                  </div>
-                  <div class="col">
-                     <div class="box_main">
-                        <div class="icon_5"></div>
-                        <h4 class="fashion_text">Sweaters & Jackets</h4>
-                     </div>
-                  </div>
-               </div>
-            </div>
+                 </div>
+             </div>
          </div>
-         <div class="category_section_2">
-            <div class="row">
-               <div class="col-lg-4 col-sm-12">
-                  <div class="beds_section active">
-                     <h1 class="bed_text">Up to 50% off | Beds</h1>
-                     <div><img src="images/img-2.png" class="image_2"></div>
-                     <div class="seemore_bt"><a href="#">see More</a></div>
+     </div>
+     <div class="container mt-5 mb-5 myDiv" style="display:none" id="Second" >
+      <div class="row d-flex justify-content-center">
+          <div class="col-md-10">
+              <div class="card">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="images p-3">
+                              <div class="text-center p-4"> <img id="main-image" src="https://i.imgur.com/Dhebu4F.jpg" width="250" /> </div>
+                              <div class="thumbnail text-center"> <img onclick="change_image(this)" src="https://i.imgur.com/Rx7uKd0.jpg" width="70"> <img onclick="change_image(this)" src="https://i.imgur.com/Dhebu4F.jpg" width="70"> </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="product p-4">
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div class="d-flex align-items-center"> <i class="fa fa-long-arrow-left"></i> <span class="ml-1">Back</span> </div> <i class="fa fa-shopping-cart text-muted"></i>
+                              </div>
+                              <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">Orianz</span>
+                                  <h5 class="text-uppercase">Men's slim fit t-shirt</h5>
+                                  <div class="price d-flex flex-row align-items-center"> <span class="act-price">$20</span>
+                                      <div class="ml-2"> <small class="dis-price">$59</small> <span>40% OFF</span> </div>
+                                  </div>
+                              </div>
+                              <p class="about">Shop from a wide range of t-shirt from orianz. Pefect for your everyday use, you could pair it with a stylish pair of jeans or trousers complete the look.</p>
+                              <div class="sizes mt-5">
+                                  <h6 class="text-uppercase">Size</h6> <label class="radio"> <input type="radio" name="size" value="S" checked> <span>S</span> </label> <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label> <label class="radio"> <input type="radio" name="size" value="L"> <span>L</span> </label> <label class="radio"> <input type="radio" name="size" value="XL"> <span>XL</span> </label> <label class="radio"> <input type="radio" name="size" value="XXL"> <span>XXL</span> </label>
+                              </div>
+                              <div class="cart mt-4 align-items-center"> <button class="btn btn-danger text-uppercase mr-2 px-4">Add to cart</button> <i class="fa fa-heart text-muted"></i> <i class="fa fa-share-alt text-muted"></i> </div>
+                          </div>
+                      </div>
                   </div>
-               </div>
-               <div class="col-lg-4 col-sm-12">
-                  <div class="beds_section">
-                     <h1 class="bed_text">organized in style</h1>
-                     <div><img src="images/img-3.png" class="image_2"></div>
-                     <div class="seemore_bt"><a href="#">see More</a></div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-sm-12">
-                  <div class="beds_section">
-                     <h1 class="bed_text">Refurbished mixer</h1>
-                     <div><img src="images/img-4.png" class="image_2"></div>
-                     <div class="seemore_bt"><a href="#">see More</a></div>
-                  </div>
-               </div>
-            </div>
-         </div>
+              </div>
+          </div>
       </div>
-      <!-- category section end -->
-      <!-- beauty product section start -->
-      <div class="beauty_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-4 col-sm-12">
-                  <div class="beauty_box">
-                     <h1 class="bed_text">Beauty products</h1>
-                     <div><img src="images/img-5.png" class="image_3"></div>
-                     <div class="seemore_bt"><a href="#">see More</a></div>
-                  </div>
-               </div>
-               <div class="col-lg-8 col-sm-12">
-                  <div class="beauty_box_1">
-                     <h1 class="bed_text_1">Explore trending electronics</h1>
-                     <div><img src="images/img-6.png" class="image_3"></div>
-                     <div class="seemore_bt_1"><a href="#">see More</a></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- beauty product section end -->
-      <!-- product section start -->
-      <div class="product_section layout_padding">
-         <div class="container">
-            <h1 class="feature_taital">FEATURED PRODUCTS</h1>
-            <p class="feature_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking</p>
-            <div class="product_section_2">
+  </div>
+  <div class="container mt-5 mb-5 myDiv" style="display:none" id="Third" >
+   <div class="row d-flex justify-content-center">
+       <div class="col-md-10">
+           <div class="card">
                <div class="row">
-                  <div class="col-sm-5">
-                     <div class="feature_box">
-                        <h1 class="readable_text">Readable content of</h1>
-                        <div><img src="images/img-7.png" class="image_7"></div>
-                     </div>
-                     <div class="feature_box_1">
-                        <h1 class="readable_text">Readable content of</h1>
-                        <div><img src="images/img-7.png" class="image_7"></div>
-                     </div>
-                  </div>
-                  <div class="col-sm-7">
-                     <div class="feature_box_2">
-                        <h1 class="readable_text">Readable content of</h1>
-                        <div><img src="images/img-8.png" class="image_8"></div>
-                        <div class="seemore_bt"><a href="#">see More</a></div>
-                     </div>
-                  </div>
+                   <div class="col-md-6">
+                       <div class="images p-3">
+                           <div class="text-center p-4"> <img id="main-image" src="https://i.imgur.com/Dhebu4F.jpg" width="250" /> </div>
+                           <div class="thumbnail text-center"> <img onclick="change_image(this)" src="https://i.imgur.com/Rx7uKd0.jpg" width="70"> <img onclick="change_image(this)" src="https://i.imgur.com/Dhebu4F.jpg" width="70"> </div>
+                       </div>
+                   </div>
+                   <div class="col-md-6">
+                       <div class="product p-4">
+                           <div class="d-flex justify-content-between align-items-center">
+                               <div class="d-flex align-items-center"> <i class="fa fa-long-arrow-left"></i> <span class="ml-1">Back</span> </div> <i class="fa fa-shopping-cart text-muted"></i>
+                           </div>
+                           <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">Orianz</span>
+                               <h5 class="text-uppercase">Men's slim fit t-shirt</h5>
+                               <div class="price d-flex flex-row align-items-center"> <span class="act-price">$20</span>
+                                   <div class="ml-2"> <small class="dis-price">$59</small> <span>40% OFF</span> </div>
+                               </div>
+                           </div>
+                           <p class="about">Shop from a wide range of t-shirt from orianz. Pefect for your everyday use, you could pair it with a stylish pair of jeans or trousers complete the look.</p>
+                           <div class="sizes mt-5">
+                               <h6 class="text-uppercase">Size</h6> <label class="radio"> <input type="radio" name="size" value="S" checked> <span>S</span> </label> <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label> <label class="radio"> <input type="radio" name="size" value="L"> <span>L</span> </label> <label class="radio"> <input type="radio" name="size" value="XL"> <span>XL</span> </label> <label class="radio"> <input type="radio" name="size" value="XXL"> <span>XXL</span> </label>
+                           </div>
+                           <div class="cart mt-4 align-items-center"> <button class="btn btn-danger text-uppercase mr-2 px-4">Add to cart</button> <i class="fa fa-heart text-muted"></i> <i class="fa fa-share-alt text-muted"></i> </div>
+                       </div>
+                   </div>
                </div>
-            </div>
-         </div>
-      </div>
-      <!-- product section end -->
-      <!-- client section start -->
-      <div class="client_section layout_padding">
-         <div id="main_slider" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="container">
-                     <h1 class="feature_taital">what is says our customer</h1>
-                     <p class="feature_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking</p>
-                     <div class="client_section_2">
-                        <div class="image_9"><img src="images/img-9.png"></div>
-                        <h3 class="nolmal_text">Normal distribution</h3>
-                        <p class="ipsum_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                        <div class="image_9"><img src="images/icon-10.png"></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="container">
-                     <h1 class="feature_taital">FEATURED PRODUCTS</h1>
-                     <p class="feature_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking</p>
-                     <div class="client_section_2">
-                        <div class="image_9"><img src="images/img-9.png"></div>
-                        <h3 class="nolmal_text">Normal distribution</h3>
-                        <p class="ipsum_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                        <div class="image_9"><img src="images/icon-10.png"></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="container">
-                     <h1 class="feature_taital">FEATURED PRODUCTS</h1>
-                     <p class="feature_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking</p>
-                     <div class="client_section_2">
-                        <div class="image_9"><img src="images/img-9.png"></div>
-                        <h3 class="nolmal_text">Normal distribution</h3>
-                        <p class="ipsum_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                        <div class="image_9"><img src="images/icon-10.png"></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-            <i class=""><img src="images/left-icon.png"></i>
-            </a>
-            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-            <i class=""><img src="images/right-icon.png"></i>
-            </a>
-         </div>
-      </div>
-      <!-- client section end -->
-      <!-- newsletter section start -->
-      <div class="newsletter_section layout_padding">
-         <div class="container">
-            <h6 class="conect_text">Connect to caraft</h6>
-            <h1 class="newsletter_taital">Join Our Newsletter</h1>
-            <p class="newsletter_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration </p>
-            <div class="input-group mb-3">
-               <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
-               <div class="input-group-append">
-                  <span class="input-group-text" id="basic-addon2">Subscribe</span>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- newsletter section end -->
-      <!-- footer section start -->
+           </div>
+       </div>
+   </div>
+</div>
       <div class="footer_section layout_padding">
          <div class="container">
             <div class="row">
